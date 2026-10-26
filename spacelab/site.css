@@ -58,9 +58,9 @@ ul.plain li{margin:0 0 .6em}
 /* hero: centred and mirrored */
 .hero{padding:clamp(36px,6vh,72px) 0 0}
 .hero-head{text-align:center;display:flex;flex-direction:column;align-items:center}
-.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(36px,8vw,96px);max-width:1100px;text-align:left;line-height:1.02;letter-spacing:-.035em;font-weight:400;margin-bottom:22px}
+.hero h1{font-family:var(--f-display);font-size:clamp(28px,7.5vw,96px);max-width:1100px;text-align:center;line-height:1.05;letter-spacing:-.01em;font-weight:600;margin-bottom:22px}
 .hero h1 span{display:block}
-.hero h1 span:nth-child(2){color:var(--violet);font-style:italic}
+.hero h1 span:nth-child(2){color:var(--violet);font-style:normal}
 .hero h1 .accent{color:var(--cyan)}
 .highlight-ai{color:var(--violet);font-weight:inherit}
 .highlight-quantum{color:var(--cyan);font-weight:inherit}
@@ -83,7 +83,7 @@ ul.plain li{margin:0 0 .6em}
 /* the star map */
 .sky [data-c=intelligence]{--cc:var(--c-intelligence)}.sky [data-c=entanglement]{--cc:var(--c-entanglement)}.sky [data-c=connectivity]{--cc:var(--c-connectivity)}
 .sky .zone{font:700 40px var(--f-display);letter-spacing:.14em;opacity:.55;pointer-events:none;fill:var(--cc)}
-.sky .zone[data-c=connectivity],.sky .zone[data-c=intelligence]{font-size:23px;letter-spacing:.025em}
+.sky .zone[data-c=connectivity],.sky .zone[data-c=intelligence],.sky .zone[data-c=entanglement]{font-size:23px;letter-spacing:.025em}
 .sky .orbit{fill:none;stroke:var(--cc);stroke-width:1;opacity:.10;transition:opacity .3s}
 .sky .chain{stroke:var(--cc);stroke-width:1.5;stroke-dasharray:2 6;stroke-linecap:round;opacity:.48;transition:opacity .3s;pointer-events:none}
 .sky .chain.keyword{stroke:#e7e5f4;opacity:.32}
