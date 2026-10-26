@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Q-AICON Lab</title>
+<meta name="description" content="Research topics of the Q-AICON Lab grouped into Intelligence, Entanglement and Connectivity.">
+<meta name="theme-color" content="#070914">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="/teamweb-preview/spacelab/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Exo+2:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/teamweb-preview/spacelab/site.css?v=mvpef3d3">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="research-page">
+<canvas id="stars" aria-hidden="true"></canvas>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/teamweb-preview/spacelab/"><img src="/teamweb-preview/spacelab/logo.png" alt="" width="34" height="34"><span>Q-AICON Lab</span></a>
+    <nav id="nav" aria-label="Main">
+      <a href="/teamweb-preview/spacelab/research/" aria-current="page">Research</a>
+      <a href="/teamweb-preview/spacelab/projects/">Projects</a>
+      <a href="/teamweb-preview/spacelab/publications/">Publications</a>
+      <a href="/teamweb-preview/spacelab/people/">People</a>
+      <a href="/teamweb-preview/spacelab/news/">News</a>
+      <a href="/teamweb-preview/spacelab/#join">Join us</a>
+    </nav>
+    <button class="chip menu" id="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+<main id="main">
+<section class="page-head centered"><div class="wrap">
+  <h1>Research</h1>
+  <p class="sub">Quantum and AI Computing, Optimization, and Networking</p>
+  <nav class="jump" aria-label="Research directions"><a class="chip" data-c="intelligence" href="#intelligence">Intelligence <span>2</span></a><a class="chip" data-c="entanglement" href="#entanglement">Entanglement <span>1</span></a><a class="chip" data-c="connectivity" href="#connectivity">Connectivity <span>5</span></a></nav>
+</div></section><section class="sec theme" id="intelligence" data-c="intelligence" aria-labelledby="h-intelligence"><div class="wrap">
+      <header class="theme-head"><h2 id="h-intelligence">Intelligence</h2><p class="q">How can learning run efficiently across many devices when every model update has to cross a wireless link?</p></header>
+      <div class="tiles"><article class="tile" id="edge-ai" data-reveal style="--d:0ms">
+        <div class="tile-fig"><img src="/teamweb-preview/spacelab/img/communication-efficient-edge-ai-900.webp" alt="Diagram of edge devices training local models and exchanging parameters with an aggregation server" width="900" height="500" loading="lazy" decoding="async"></div>
+        <h3>Communication-Efficient Edge AI</h3>
+        <p>Federated, hierarchical, digital-twin-assisted, and task-oriented learning designs that reduce the cost of exchanging model updates over wireless links.</p>
+        <p class="tile-links"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10255731" rel="noopener">FL over NOMA (IEEE)</a><a href="https://ieeexplore.ieee.org/abstract/document/10562220" rel="noopener">Hierarchical FL (IEEE)</a><a href="https://ieeexplore.ieee.org/abstract/document/10758042" rel="noopener">Digital twin FL (IEEE)</a><a href="https://arxiv.org/abs/2501.01584" rel="noopener">Digital twin FL (arXiv)</a><a href="https://arxiv.org/abs/2501.03448" rel="noopener">Task-oriented FL (arXiv)</a></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Edge artificial intelligence (AI), a fusion of edge computing and AI algorithms, has attracted significant research interest in recent years. Unlike traditional cloud-based AI, which relies on centralized processing of raw data, edge AI enables distributed data processing and decision-making directly at the device level, effectively mitigating the risk of data leakage. Edge AI also offers reduced latency and improved energy efficiency, making it well-suited for responsive applications such as industrial IoT, autonomous vehicles, and smart home systems. In edge AI systems, devices perform local model training using their own data and upload the trained model parameters to a coordinating server responsible for global model aggregation and distribution. However, the frequent parameter exchange between devices and the server poses challenges to communication and training efficiency, which are critical to the performance of edge AI systems.</p>
+          <h4>Aims</h4><ul><li>Communication-efficient Federated Learning (FL) and Hierarchical FL (HFL) over NOMA networks: strategies to optimize communication overhead.</li><li>Digital-twin-assisted FL systems: leveraging digital twins to enhance training efficiency and improve resource utilization.</li><li>Task-oriented edge AI systems: solutions tailored to diverse task requirements across devices to ensure strong performance and resource allocation.</li></ul>
+          <h4>Papers</h4><ul class="refs"><li>B. Wu, F. Fang, and X. Wang, “Joint Age-based Client Selection and Resource Allocation for Communication-Efficient Federated Learning over NOMA Networks”, IEEE Transactions on Communications, vol. 72, no. 1, pp. 179-192, Jan. 2024. <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10255731" rel="noopener">IEEE Xplore</a></li><li>B. Wu, F. Fang, X. Wang, D. Cai, S. Fu, and Z. Ding, “Client Selection and Cost-Efficient Joint Optimization for NOMA-Enabled Hierarchical Federated Learning”, IEEE Transactions on Wireless Communications, vol. 23, no. 10, pp. 14289-14303, Oct. 2024. <a href="https://ieeexplore.ieee.org/document/10562220" rel="noopener">IEEE Xplore</a></li><li>B. Wu, F. Fang, and X. Wang, “Performance Optimization of Digital Twin Assisted Federated Learning over NOMA Networks Using Stackelberg Game”, the 2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall), 2024. <a href="https://ieeexplore.ieee.org/document/10758042" rel="noopener">IEEE Xplore</a></li><li>B. Wu, F. Fang and X. Wang, “Stackelberg Game Enabled Performance Enhancement in Digital Twin-Assisted Federated Learning with Reputation-Aware Client Selection”, IEEE Transactions on Wireless Communications, 2025. <a href="https://ieeexplore.ieee.org/document/11059374" rel="noopener">IEEE Xplore</a></li><li>B. Wu, F. Fang and X. Wang, “Optimizing Value of Learning in Task-Oriented Federated Meta-Learning Systems”, the 2025 IEEE International Conference on Communications (ICC-2025), 2025. <a href="https://arxiv.org/abs/2501.03448" rel="noopener">arXiv</a></li></ul>
+        </details>
+      </article><article class="tile" id="semantic-communications" data-reveal style="--d:70ms">
+        <div class="tile-fig"><img src="/teamweb-preview/spacelab/img/semcom-900.webp" alt="Diagram of a semantic communication system with shared knowledge bases at transmitter and receiver" width="900" height="506" loading="lazy" decoding="async"></div>
+        <h3>Semantic Communications</h3>
+        <p>Exchanging the meaning extracted from messages, using knowledge bases shared by transmitter and receiver, rather than transmitting the raw bit stream.</p>
+        <p class="tile-links"><a href="https://ieeexplore.ieee.org/abstract/document/10508943" rel="noopener">Model selection (IEEE)</a><a href="https://arxiv.org/abs/2501.01635" rel="noopener">Multi-cell semantic-bit (arXiv)</a><a href="https://arxiv.org/abs/2501.01637" rel="noopener">Two-tier semantic-bit (arXiv)</a></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Benefitting from advancements in micro-electronics and artificial intelligence, recent developments in machine learning and end-to-end communication technologies are driving the transformation of traditional communication systems toward future paradigms. Semantic communications, as an emerging intelligent communication paradigm, focus on exchanging the meaning or semantics extracted from messages rather than transmitting the raw bit stream directly. By leveraging shared knowledge bases (KBs) between the transmitter and receiver, more meaningful semantic information is extracted from the source data before semantic and channel encoding at the transmitter. The receiver recovers the source information by semantic restoration through channel and semantic decoding. This approach has shown significant potential to address spectrum scarcity and improve communication efficiency.</p>
+          <h4>Aims</h4><ul><li>An edge-assisted semantic communications framework for resource-constrained IoT devices, described in the source as the first work to study the semantic extraction model selection problem in an edge-assisted semantic network.</li><li>A knowledge-sharing-enabled, task-oriented hybrid semantic-bit communications mechanism for multi-cell networks to tackle knowledge-base mismatch.</li><li>A collaborative knowledge-sharing semantic-bit mechanism that maximizes a derived generalized effective semantic transmission rate in two-tier edge networks.</li></ul>
+          <h4>Papers</h4><ul class="refs"><li>H. Chen, F. Fang, and X. Wang, “Semantic extraction model selection for IOT devices in edge-assisted semantic communications”, IEEE Communications Letters, vol. 28, no. 7, pp. 1733-1737, July 2024. <a href="https://ieeexplore.ieee.org/document/10508943" rel="noopener">IEEE Xplore</a></li><li>H. Chen, F. Fang, and X. Wang, “Knowledge Sharing-enabled Semantic Rate Maximization for Multi-cell Task-oriented Hybrid Semantic-Bit Communication Networks”, IEEE Transactions on Communications, 2024. <a href="https://arxiv.org/abs/2501.01635" rel="noopener">arXiv</a></li><li>H. Chen, F. Fang, and X. Wang, “Collaborative Knowledge Sharing-empowered Effective Semantic Rate Maximization for Two-tier Semantic-Bit Communication Networks”, the 2025 IEEE International Conference on Communications (ICC-2025), 2025. <a href="https://arxiv.org/abs/2501.01637" rel="noopener">arXiv</a></li><li>Oladayo Richard Ogunjimi et al. (full author list not given in source), “A Goal-Oriented Context-Aware Adaptive Semantic Communication Scheme Using a Semantic Mask Module”, IEEE International Conference on Communications (ICC) 2025 Workshop - TOGC6G, 2025.</li></ul>
+        </details>
+      </article></div>
+    </div></section><section class="sec theme" id="entanglement" data-c="entanglement" aria-labelledby="h-entanglement"><div class="wrap">
+      <header class="theme-head"><h2 id="h-entanglement">Entanglement</h2><p class="q">How can large combinatorial problems fit on today’s qubit-limited quantum hardware without giving up solution quality?</p></header>
+      <div class="tiles"><article class="tile" id="qubit-efficient-qc" data-reveal style="--d:0ms">
+        <div class="tile-fig"><img src="/teamweb-preview/spacelab/img/qubit-efficient-900.webp" alt="Diagram of the qubit-efficient quantum computing approach to combinatorial optimization" width="900" height="506" loading="lazy" decoding="async"></div>
+        <h3>Qubit-Efficient Quantum Computing</h3>
+        <p>Reducing the qubit requirements of the Quantum Approximate Optimization Algorithm (QAOA) while preserving optimization performance.</p>
+        <p class="tile-links"><a href="https://arxiv.org/abs/2604.18285" rel="noopener">EQE-QAOA preprint (arXiv)</a></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Quantum Computing (QC) has emerged as a promising approach for solving combinatorial optimization problems by exploring exponentially large solution spaces. It provides compelling global search capabilities, potentially capable of outperforming classical heuristics in finding high-quality solutions. However, the limited number of qubits is a major bottleneck in QAOA for large-scale combinatorial optimization in the Noisy Intermediate-Scale Quantum (NISQ) era. Existing qubit reduction methods typically trade off performance for efficiency, as they introduce information loss and degrade solution quality. A key challenge is therefore how to reduce qubit requirements while preserving the original optimization performance.</p>
+          <h4>Aims</h4><ul><li>Qubit reduction based on conserved quantities and symmetry-constrained quantum dynamics, which restrict the evolution to an invariant subspace.</li><li>Isometric encoding strategies for representing this subspace with fewer qubits.</li><li>Applicability conditions and scalability for large-scale optimization problems in engineering.</li></ul>
+          <h4>Papers</h4><ul class="refs"><li>X. Ma, F. Fang, X. Xie, X. Wang and L. Hanzo, “EQE-QAOA: An Equivalence-Preserving Qubit Efficient Framework for Combinatorial Optimization”, IEEE Journal of Selected Topics in Signal Processing, 2026. <a href="https://arxiv.org/abs/2604.18285" rel="noopener">arXiv</a></li><li>X. Ma, F. Fang and X. Wang, “QAOA-Based Pilot Assignment for Cell-Free Massive MIMO Systems”, IEEE Quantum Week 2026 Workshop on Signal and Information Processing in the Quantum Era, 2026.</li></ul>
+        </details>
+      </article></div>
+    </div></section><section class="sec theme" id="connectivity" data-c="connectivity" aria-labelledby="h-connectivity"><div class="wrap">
+      <header class="theme-head"><h2 id="h-connectivity">Connectivity</h2><p class="q">How should antennas, surfaces, power, and access be configured so that many users share a channel efficiently and securely?</p></header>
+      <div class="tiles"><article class="tile" id="pinching-antennas" data-reveal style="--d:0ms">
+        <div class="tile-fig"><img src="/teamweb-preview/spacelab/img/pinching-antenna-900.webp" alt="Illustration of a pinching-antenna system with dielectric elements placed along a waveguide near users" width="900" height="507" loading="lazy" decoding="async"></div>
+        <h3>Pinching Antenna Systems</h3>
+        <p>A low-cost, reconfigurable flexible-antenna approach: small dielectric elements placed along a waveguide create antennas close to users.</p>
+        <p class="tile-links"><a href="https://ieeexplore.ieee.org/abstract/document/11016750" rel="noopener">Placement design paper (IEEE)</a></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Pinching antenna technology is a promising direction in flexible-antenna systems, offering a low-cost and reconfigurable approach to improve wireless communication. Unlike traditional antennas with fixed positions, pinching antennas are created by placing small dielectric elements along a dielectric waveguide. This setup allows antennas to be positioned close to users, which helps establish strong line-of-sight links and reduce large-scale path loss. The system supports multiple antennas on a single waveguide at no extra hardware cost and aligns well with techniques like non-orthogonal multiple access (NOMA) by enabling signal superposition. With the ability to adjust antenna placement to reconfigure channel conditions, pinching antennas provide an efficient and scalable solution for future wireless networks, especially in indoor and dense-user scenarios.</p>
+          <h4>Aims</h4><ul><li>Low-complexity optimization of pinching antenna placement.</li><li>Blockage modeling in pinching-antenna-assisted networks.</li><li>AI-empowered pinching antenna systems.</li></ul>
+          <h4>Papers</h4><ul class="refs"><li>X. Xie, F. Fang, Z.Ding and X. Wang, “A Low-Complexity Placement Design of Pinching-Antenna Systems”, IEEE Communications Letters, 2025. <a href="https://ieeexplore.ieee.org/abstract/document/11016750" rel="noopener">IEEE Xplore</a></li><li>Bibo Wu et al. (full author list not given in source), “Straggler-Resilient Federated Learning over A Hybrid Conventional and Pinching Antenna Network”, IEEE Transactions on Vehicular Technology, 2026.</li></ul>
+        </details>
+      </article><article class="tile" id="noma" data-reveal style="--d:70ms">
+        <div class="tile-fig"><img src="/teamweb-preview/spacelab/img/noma-com-900.webp" alt="Diagram of NOMA users sharing a resource block with different power levels and successive interference cancellation" width="900" height="506" loading="lazy" decoding="async"></div>
+        <h3>Non-Orthogonal Multiple Access (NOMA) Communications</h3>
+        <p>Letting multiple users share the same resource block through power-domain multiplexing and successive interference cancellation (SIC).</p>
+        <p class="tile-links"><a href="https://arxiv.org/abs/2501.01048" rel="noopener">Semantic and bit-based NOMA (arXiv)</a></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Non-Orthogonal Multiple Access (NOMA), introduced for 3GPP LTE-Advanced, presents a promising solution to the challenges faced by 5G networks by enabling multiple users to share the same orthogonal resource block. This approach improves spectrum efficiency compared to traditional Orthogonal Multiple Access (OMA). The key idea behind NOMA is to exploit differences in users’ channel conditions. By allocating different power levels to users based on their channel quality, NOMA ensures that signals intended for different users can be separated using successive interference cancellation (SIC) at the receiver.</p>
+          <h4>Aims</h4><ul><li>Optimization of beamforming, phase adjustment, and power distribution in a multi-cluster RIS-NOMA system.</li><li>Minimization of power consumption in downlink hybrid NOMA networks.</li><li>Minimization of power consumption in NOMA networks where semantic and bit-based users coexist.</li></ul>
+          <h4>Papers</h4><ul class="refs"><li>X. Xie, F. Fang, and X. Wang, “Rethinking Power Minimization in a Downlink Hybrid NOMA Network”, IEEE Communications Letters, 2024.</li><li>X. Xie, F. Fang, L. Zhang and X. Wang, “Power-Efficient Optimization for Coexisting Semantic and Bit-Based Users in NOMA Networks”, IEEE Transactions on Communications, 2024. <a href="https://arxiv.org/abs/2501.01048" rel="noopener">arXiv</a></li><li>Y. Xu, F. Fang, S. Wang, D. Cai, “Energy Efficiency Maximization for Downlink NOMA Designs Via Symbol-Level Precoding”, IEEE Transactions on Vehicular Technology, vol. 73, no. 10, pp. 14974-14987, Oct. 2024. <a href="https://ieeexplore.ieee.org/abstract/document/10568396" rel="noopener">IEEE Xplore</a></li></ul>
+        </details>
+      </article><article class="tile" id="ris" data-reveal style="--d:140ms">
+        <div class="tile-fig"><img src="/teamweb-preview/spacelab/img/riss-900.webp" alt="Diagram of a reconfigurable intelligent surface reflecting signals to legitimate users while limiting eavesdroppers" width="900" height="506" loading="lazy" decoding="async"></div>
+        <h3>Reconfigurable Intelligent Surfaces (RISs)</h3>
+        <p>RIS-aided physical-layer security: beamforming, deployment, and hybrid active/passive surfaces for secure 6G links, including integrated sensing and communication.</p>
+        <p class="tile-links"><a href="https://ieeexplore.ieee.org/abstract/document/10707246" rel="noopener">Active RIS security (IEEE)</a></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Sixth-generation (6G) networks face serious security risks due to the broadcast nature of wireless channels, large amounts of privacy-sensitive data, and growing attack vectors. Physical layer security (PLS) secures legitimate transmissions by exploiting the dynamic characteristics of wireless communications. Reconfigurable intelligent surfaces (RISs) turn traditional wireless networks into smart radio environments without large costs or added complexity, and RIS-aided PLS solutions can be applied to 6G technologies such as multi-access edge computing (MEC), integrated sensing and communication (ISAC), and NOMA.</p>
+          <h4>Aims</h4><ul><li>Beamforming design for passive-RIS-aided PLS systems, considering the spatial deployment of the RIS.</li><li>The ability of hybrid active/passive RIS to enhance secure performance.</li><li>Using RISs to enhance the secure performance of integrated sensing and communication (ISAC).</li></ul>
+          <h4>Papers</h4><ul class="refs"><li>X. Bai, A, Yu, F, Fang, X. Wang, Y. Yang, and Y. Li, “Secure Communication in Active RIS-Assisted MISO Systems with Hardware Impairments”, IEEE Communications Letters, vol. 13, no. 12, pp. 3528-3532, Dec. 2024. <a href="https://ieeexplore.ieee.org/abstract/document/10707246" rel="noopener">IEEE Xplore</a></li></ul>
+        </details>
+      </article><article class="tile" id="trustworthy-wireless" data-reveal style="--d:210ms">
+        <div class="tile-fig"><img src="/teamweb-preview/spacelab/img/security-900.webp" alt="Diagram of physical-layer secrecy and authentication between legitimate and illegitimate receivers" width="900" height="530" loading="lazy" decoding="async"></div>
+        <h3>Trustworthy Wireless Communications</h3>
+        <p>Physical-layer mechanisms that achieve secrecy and authentication together, protecting signals from eavesdropping and rejecting unauthorized access.</p>
+        <p class="tile-links"><a href="https://arxiv.org/abs/2501.03080" rel="noopener">Tag-based encoding (arXiv)</a></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Secure wireless communications face increasing vulnerabilities caused by the open nature of propagation environments, requiring the capability to reject unauthorized access and protect signals from eavesdropping. Various physical-layer mechanisms are potential solutions with the advantages of low latency and high compatibility. Artificial noise (AN) and precoding (beamforming) can differentiate legitimate and illegitimate receptions to achieve a secrecy rate, and authentication verifies transceivers based on hardware impairments, channel characteristics, or an artificial fingerprint (tag).</p>
+          <h4>Aims</h4><ul><li>A dual-reference symmetric tag serving as the reference for one-time-pad encryption and for tag-embedding authentication.</li><li>Extracting accurate channel attributes for key generation and channel-based authentication.</li><li>Uniquely decomposable constellations with cooperative message and tag transmission.</li></ul>
+          <h4>Papers</h4><ul class="refs"><li>J. Wang, F. Fang, G. Han, N. Wang and X. Wang, “Joint Secrecy Rate Achieving and Authentication Enhancement via Tag-based Encoding in Chaotic UAV Communication Environment”, IEEE Internet of Things, 2025. <a href="https://arxiv.org/abs/2501.03080" rel="noopener">arXiv</a></li></ul>
+        </details>
+      </article><article class="tile" id="zero-trust" data-reveal style="--d:280ms">
+        <div class="tile-fig"><img src="/teamweb-preview/spacelab/img/zero-trust-900.webp" alt="Diagram of a decentralized zero trust architecture across IoT domains" width="900" height="506" loading="lazy" decoding="async"></div>
+        <h3>Decentralized Zero Trust Authentication and Authorization</h3>
+        <p>Continuous device verification and fine-grained access control for large-scale IoT networks, across domains and without a central authority.</p>
+        <p class="tile-links"><a href="https://arxiv.org/abs/2501.03601" rel="noopener">Cross-domain zero trust (arXiv)</a></p>
+        <details class="more">
+          <summary>Read more</summary>
+          <p>Decentralized Zero Trust Authentication and Authorization is a framework designed to enhance the security of large-scale IoT networks. Unlike centralized methods that rely on one-time authentication, it applies the principles of Zero Trust Architecture (ZTA) to ensure continuous device verification and fine-grained access control, mitigating risks such as lateral movement attacks and session hijacking. Implementing decentralized authentication and authorization poses challenges, including efficient communication across domains, preserving data privacy, and adapting to the diverse data characteristics of large-scale IoT networks.</p>
+          <h4>Aims</h4><ul><li>Continuous and decentralized access control for intra-domain and cross-domain IoT environments.</li><li>Privacy-preserving mechanisms that reduce data transmission by securely sharing essential information.</li><li>Real-time adaptability through context-aware evaluation and collaborative learning such as Decentralized Federated Learning (DFL).</li></ul>
+          <h4>Papers</h4><ul class="refs"><li>X. Ma, F. Fang and X. Wang, “Dynamic Authentication and Granularized Authorization with a Cross-Domain Zero Trust Architecture for Federated Learning in Large-Scale IoT Networks”, IEEE Transactions on Networking, 2024. <a href="https://arxiv.org/abs/2501.03601" rel="noopener">arXiv</a></li></ul>
+        </details>
+      </article></div>
+    </div></section>
+<section class="sec approach" aria-labelledby="h-approach"><div class="wrap">
+  <h2 id="h-approach" class="sec-h">Approach</h2>
+  <div class="approach-cols"><p>Our research advances an AI–network co-evolution paradigm in which AI autonomously optimizes network operation, resource orchestration, and system performance, while connectivity infrastructure operationalizes and scales distributed intelligence, including edge and federated learning. We also develop resource-efficient and scalable quantum optimization and machine-learning methods for complex problems in wireless communications, networking, and other industry applications.</p><p>Our work emphasizes deployable solutions, including intelligent radio environments such as RIS-enabled systems, AI- and quantum-driven system optimization, integrated communication–sensing–computing, and wireless edge intelligence. Through experimental testbeds, system prototyping, quantum-hardware validation, and industry collaboration, Q-AICON translates these innovations into practical technologies for 6G networks, smart infrastructure, autonomous systems, and mission-critical industrial applications.</p></div>
+</div></section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot-name" aria-hidden="true">Q-AICON</p>
+    <div class="foot-cols">
+      <div>
+        <h2>Q-AICON Lab</h2>
+        <p>Quantum and AI Computing, Optimization, and Networking</p>
+        <p>Department of Electrical &amp; Computer Engineering<br>Department of Computer Science<br>Western University, London, Ontario, Canada</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p><a href="mailto:fang.fang@uwo.ca">fang.fang@uwo.ca</a><br><a href="tel:+15196612111">519-661-2111 ext. 82135</a></p>
+        <p>Department of Electrical and Computer Engineering<br>Thompson Engineering Building, Room TEB 261<br>Western University<br>1151 Richmond St, London, ON N6A 3K7</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul class="plain"><li><a href="/teamweb-preview/spacelab/research/">Research</a></li><li><a href="/teamweb-preview/spacelab/projects/">Projects</a></li><li><a href="/teamweb-preview/spacelab/publications/">Publications</a></li><li><a href="/teamweb-preview/spacelab/people/">People</a></li><li><a href="/teamweb-preview/spacelab/news/">News</a></li><li><a href="/teamweb-preview/spacelab/#join">Join us</a></li></ul>
+        <ul class="plain"><li><a href="https://scholar.google.ca/citations?user=SUpod8QAAAAJ&hl=en" rel="noopener">Google Scholar</a></li><li><a href="https://www.linkedin.com/in/fang-fang-8832184a/?originalSubdomain=ca" rel="noopener">LinkedIn</a></li><li><a href="https://fionauwo.github.io/AICON/" rel="noopener">Original lab site</a></li></ul>
+      </div>
+    </div>
+    <p class="fine">Layout inspired by the open-source SpaceLab template (MIT). The star map is a conceptual illustration: it shows thematic relationships, not measurements or collaborations.</p>
+  </div>
+</footer>
+<script src="/teamweb-preview/spacelab/site.js?v=mvpef3d3" defer></script>
+</body>
+</html>
