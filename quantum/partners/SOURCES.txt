@@ -1,0 +1,6 @@
+Mitacs: https://www.mitacs.ca/about/media-kit/
+Kelello Health: https://www.kelello.ai/ (header image)
+CAMH: https://www.camh.ca/ (header SVG)
+Beware Company: name from project content; official logo awaiting identification.
+IBM and Diamond Flight Centre: added at lab owner request, relationship unspecified. Logos from https://www.ibm.com/ and https://www.dfclondon.com/
+Home Assistant: platform integration documented in EchoMate project. Logo from https://www.home-assistant.io/images/home-assistant-logo.svg
