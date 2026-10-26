@@ -58,9 +58,12 @@ ul.plain li{margin:0 0 .6em}
 /* hero: centred and mirrored */
 .hero{padding:clamp(36px,6vh,72px) 0 0}
 .hero-head{text-align:center;display:flex;flex-direction:column;align-items:center}
-.hero h1{font-size:var(--t-hero);line-height:.98;letter-spacing:-.02em;font-weight:700;margin-bottom:22px}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(36px,8vw,96px);max-width:1100px;text-align:left;line-height:1.02;letter-spacing:-.035em;font-weight:400;margin-bottom:22px}
 .hero h1 span{display:block}
+.hero h1 span:nth-child(2){color:var(--violet);font-style:italic}
 .hero h1 .accent{color:var(--cyan)}
+.highlight-ai{color:var(--violet);font-weight:inherit}
+.highlight-quantum{color:var(--cyan);font-weight:inherit}
 .sub{font:500 var(--t-lead)/1.4 var(--f-display);letter-spacing:.06em;margin:0 0 8px;max-width:none}
 .aff{color:var(--mut);font-size:var(--t-small);margin:0;max-width:none}
 .hero-head .acts{justify-content:center}
@@ -80,9 +83,10 @@ ul.plain li{margin:0 0 .6em}
 /* the star map */
 .sky [data-c=intelligence]{--cc:var(--c-intelligence)}.sky [data-c=entanglement]{--cc:var(--c-entanglement)}.sky [data-c=connectivity]{--cc:var(--c-connectivity)}
 .sky .zone{font:700 40px var(--f-display);letter-spacing:.14em;opacity:.55;pointer-events:none;fill:var(--cc)}
-.sky .orbit{fill:none;stroke:var(--cc);stroke-width:1;opacity:.28;transition:opacity .3s}
-.sky .chain{stroke:var(--cc);stroke-width:1.5;stroke-dasharray:2 7;stroke-linecap:round;opacity:.5;transition:opacity .3s}
-.sky .chain.keyword{stroke:#e7e5f4;opacity:.38}
+.sky .zone[data-c=connectivity],.sky .zone[data-c=intelligence]{font-size:23px;letter-spacing:.025em}
+.sky .orbit{fill:none;stroke:var(--cc);stroke-width:1;opacity:.10;transition:opacity .3s}
+.sky .chain{stroke:var(--cc);stroke-width:1.5;stroke-dasharray:2 6;stroke-linecap:round;opacity:.48;transition:opacity .3s;pointer-events:none}
+.sky .chain.keyword{stroke:#e7e5f4;opacity:.32}
 .sky .star,.sky .planet{cursor:pointer;outline:none}
 .sky .star{transition:opacity .3s}
 .sky .glow{transform-box:fill-box;transform-origin:center;animation:twinkle var(--tw,4s) ease-in-out infinite}
@@ -97,12 +101,15 @@ ul.plain li{margin:0 0 .6em}
 .sky .planet text{font:500 20px var(--f-text);fill:#e7e5f4;pointer-events:none;paint-order:stroke;stroke:#070914;stroke-width:4px;stroke-linejoin:round}
 .sky .planet.topic text{fill:var(--cc);font-weight:600}
 .sky .planet.keyword text{font-size:18px;fill:var(--mut)}
+.sky .planet text{opacity:0;transition:opacity .2s}
+.sky .planet:hover text,.sky .planet:focus-visible text{opacity:1}
+.sky .orbit.keyword{display:none}
 .sky g:focus-visible .halo{opacity:.55;stroke:#fff;stroke-width:2}
 .sky.has-sel .star:not(.on){opacity:.18}
 .sky.has-sel .planet:not(.on){opacity:.1}
-.sky.has-sel .orbit:not(.on),.sky.has-sel .chain:not(.on){opacity:.05}
-.sky.has-sel .orbit.on{opacity:.7}
-.sky.has-sel .chain.on{opacity:1;stroke-width:2.4}
+.sky.has-sel .orbit:not(.on),.sky.has-sel .chain:not(.on){opacity:0}
+.sky.has-sel .orbit.on{opacity:.25}
+.sky.has-sel .chain.on{opacity:.72;stroke-width:1.7}
 .sky.has-sel .planet.on{opacity:1}
 .sky .star.on .core{stroke:#fff}
 .paused .sky .glow{animation-play-state:paused}

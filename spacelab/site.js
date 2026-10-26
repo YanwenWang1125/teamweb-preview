@@ -21,13 +21,13 @@
     const bandW = Math.max(W, H) * 0.16;
     const along = (k) => [W * (-0.1 + 1.2 * k), H * (1.05 - 1.1 * k)];
     const nx = H * 1.1, ny = W * 1.2, nl = Math.hypot(nx, ny);
-    for (let i = 0; i < 140; i++) {
+    for (let i = 0; i < 55; i++) {
       const [x, y] = along(Math.random()), o = gauss() * bandW * 0.8;
-      g.globalAlpha = 0.018 + Math.random() * 0.02;
+      g.globalAlpha = 0.006 + Math.random() * 0.008;
       g.fillStyle = pick(['#6d5bd0', '#4c6fd8', '#3aa7c4', '#8b5cf6']);
       g.beginPath(); g.arc(x + (o * nx) / nl, y + (o * ny) / nl, 40 + Math.random() * 120, 0, 6.283); g.fill();
     }
-    const dust = Math.round((W * H) / (W < 700 ? 900 : 450));
+    const dust = Math.round((W * H) / (W < 700 ? 1800 : 1200));
     for (let i = 0; i < dust; i++) {
       const inBand = Math.random() < 0.6;
       let x, y;
